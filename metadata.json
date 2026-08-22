@@ -1,0 +1,6 @@
+{
+  "name": "Art House 美术教室",
+  "description": "温馨且具艺术感的美术教室网站，支持中日双语切换，提供专业课程展示、学生作品画廊、在线预约与地图指引。",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

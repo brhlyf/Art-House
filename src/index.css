@@ -1,0 +1,111 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: 'Shippori Mincho', 'Noto Serif JP', 'Noto Serif SC', 'Cormorant Garamond', Georgia, serif;
+    --font-sans: 'Noto Sans JP', 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Hiragino Sans', 'Yu Gothic UI', sans-serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    line-break: strict;
+    word-break: normal;
+    overflow-wrap: break-word;
+  }
+
+  html[lang^="ja"] {
+    font-family: 'Noto Sans JP', 'Hiragino Sans', 'Yu Gothic UI', system-ui, sans-serif;
+    letter-spacing: 0.025em;
+    line-break: strict;
+    word-break: normal;
+  }
+
+  html[lang^="zh"] {
+    font-family: 'Noto Sans SC', 'Microsoft YaHei', 'PingFang SC', system-ui, sans-serif;
+    letter-spacing: 0.015em;
+    line-break: strict;
+    word-break: normal;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  body {
+    background-color: #FAF8F5;
+    color: #2C2825;
+    overflow-x: hidden;
+  }
+}
+
+/* Editorial Japanese & Multi-lingual Serif Headings */
+.font-serif-title {
+  font-family: 'Shippori Mincho', 'Noto Serif JP', 'Noto Serif SC', 'Cormorant Garamond', Georgia, serif;
+  font-feature-settings: "palt" 1;
+}
+
+.font-serif-jp {
+  font-family: 'Shippori Mincho', 'Noto Serif JP', 'Yu Mincho', 'Hiragino Mincho ProN', serif;
+  font-feature-settings: "palt" 1;
+}
+
+.font-serif-sc {
+  font-family: 'Noto Serif SC', 'Noto Serif JP', serif;
+}
+
+/* Japanese Typesetting Helpers */
+.jp-text {
+  font-feature-settings: "palt" 1;
+  letter-spacing: 0.03em;
+  line-height: 1.8;
+}
+
+.jp-phrase {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.jp-heading {
+  font-feature-settings: "palt" 1;
+  letter-spacing: 0.04em;
+  line-height: 1.4;
+}
+
+/* Custom subtle scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F3ECE2;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D4C5B3;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #BD5D38;
+}
+
+/* Gentle paper texture overlay or art canvas feel */
+.bg-canvas-texture {
+  background-color: #FAF8F5;
+  background-image: radial-gradient(#E8DFD3 0.75px, transparent 0.75px);
+  background-size: 24px 24px;
+}
+
+.bg-linen-card {
+  background-color: #FFFFFF;
+  border: 1px solid #EBE4DA;
+}
